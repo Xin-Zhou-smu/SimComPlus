@@ -50,7 +50,7 @@ It has already finished inferencing in the training command above
       cd ../Com
       python main.py  -predict -project jdt
 
-### For Early fusion model (Expert knowledge-enhanced Com):
+### For Early fusion:
       cd ../Early_fusion
       CUDA_VISIBLE_DEVICES=0 python main.py  -predict -project jdt -combiner 'gating_on_cat_and_num_feats_then_sum'
       
