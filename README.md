@@ -34,7 +34,7 @@ In the "data" folder, "commit_content" is for the Complex Model and "hand_crafte
       CUDA_VISIBLE_DEVICES=0,1 python main.py  -train -project jdt -do_valid
       python main.py  -predict -project jdt 
 
-### For Early fusion model (Expert knowledge-enhanced Com):
+### For Early fusion:
       cd ../Early_fusion 
       CUDA_VISIBLE_DEVICES=0 python main.py  -train -project jdt -do_valid -combiner 'gating_on_cat_and_num_feats_then_sum'
       
