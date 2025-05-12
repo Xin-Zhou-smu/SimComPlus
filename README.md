@@ -24,18 +24,16 @@ In the "data" folder, "commit_content" is for the Complex Model and "hand_crafte
 ## Training&Validation
 
 ### For Sim:
-'''
       cd Sim
       mkdir pred_scores
       python sim_model.py  -project jdt
-'''
+
 ### For Com:
-'''
       cd ../Com
       mkdir pred_scores
       CUDA_VISIBLE_DEVICES=0,1 python main.py  -train -project jdt -do_valid
       python main.py  -predict -project jdt 
-'''
+
 ### For Early fusion model (Expert knowledge-enhanced Com):
       cd ../Early_fusion 
       CUDA_VISIBLE_DEVICES=0 python main.py  -train -project jdt -do_valid -combiner 'gating_on_cat_and_num_feats_then_sum'
@@ -46,7 +44,7 @@ where '-combiner' chooses the different ways of early fusion
 
 ### For Sim:
 
-It has already finished inferencing in the training cmd above
+It has already finished inferencing in the training command above
 
 ### For Com:
       cd ../Com
